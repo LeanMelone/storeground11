@@ -1,0 +1,284 @@
+:root {
+    --primary-color: #ff3b3b;
+    --background-color: #1e1e1e;
+    --text-color: #ddd;
+    --header-background: #181818;
+    --header-border: #aaaaaa;
+    --footer-background: #3c3c3c;
+    --footer-border: #bbc;
+    --footer-text: #bbb;
+}
+
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    margin: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+main {
+    max-width: 80%;
+    margin: 1.2rem auto;
+    padding: 0 1rem;
+    grid-area: main;
+
+}
+
+/* Header */
+.site-header {
+    background: var(--header-background);
+    border-bottom: 1px solid var(--header-border);
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    grid-area: header;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.brand {
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5rem 0.6rem;
+    color: var(--primary-color);
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Bungee", sans-serif;
+    font-size: small;
+    border: 2px solid transparent;
+}
+
+.nav a:hover {
+    background: var(--background-color);
+}
+
+
+.nav-toggle-checkbox {
+    position: absolute;
+    left: -9999px;
+    display: none;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--footer-text);
+    margin: 0;
+}
+
+/* Footer */
+.site-footer {
+    background: var(--footer-background);
+    border-top: 1px solid var(--footer-border);
+    color: var(--footer-text);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    grid-area: footer;
+    margin-top: 2rem;
+}
+
+.site-footer .container {
+    display: block;
+    text-align: center;
+    height: 220px;
+}
+
+.impressum {
+    color: var(--footer-text);
+}
+
+/* Logo */
+.logo * {
+    height: 46px;
+    width: auto;
+}
+
+/* zwei Reihen */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.row * {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.beschreibung {
+    color: #ccc;
+    font-size: 1.1rem;
+
+}
+
+/* Abstand */
+.abstand {
+    margin-bottom: 20px;
+}
+/* Tablet style */
+@media screen and (max-width:1200px) {
+
+    main {
+        max-width: 90%;
+    }
+
+    /* Header */
+    .container {
+        max-width: 90%;
+        flex-direction: row;
+        gap: 0.6rem;
+        padding: 0 1rem
+    }
+
+    .nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 64px;
+        background: #252525;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 0.5rem 1rem;
+        display: none;
+        flex-direction: column
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0.2rem
+    }
+
+    .nav a {
+        padding: 0.6rem;
+        border-radius: 4px
+    }
+
+    .nav-toggle {
+        display: inline-block;
+        align-self: center;
+        margin: 0;
+    }
+
+    .nav-toggle-checkbox {
+    display: inline-block;
+    }
+
+    #nav-toggle:checked~.nav {
+        display: flex
+    }
+}
+
+/* Mobile style */
+@media screen and (max-width:700px) {
+
+    main {
+        max-width: 90%;
+    }
+
+    /* Header */
+    .container {
+        max-width: 90%;
+        flex-direction: row;
+        gap: 0.6rem;
+        padding: 0 1rem
+    }
+
+    .nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 64px;
+        background: #252525;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 0.5rem 1rem;
+        display: none;
+        flex-direction: column
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0.2rem
+    }
+
+    .nav-toggle-checkbox {
+    display: inline-block;
+    }
+
+    .nav a {
+        padding: 0.6rem;
+        border-radius: 4px
+    }
+
+    .nav-toggle {
+        display: inline-block;
+        align-self: center;
+        margin: 0;
+    }
+
+    #nav-toggle:checked~.nav {
+        display: flex
+    }
+
+    /* zwei Reihen */
+    .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .row img {
+        width: 100%;
+    }
+
+    /* zwei Reihen Reihenfolge */
+    #bild {
+        order: 1;
+    }
+
+    #text {
+        order: 2;
+    }
+}
