@@ -107,6 +107,10 @@ main {
     margin: 0;
 }
 
+a.active {
+        border: 2px solid var(--footer-background);
+    }
+
 /* Footer */
 .site-footer {
     background: var(--footer-background);
@@ -133,26 +137,6 @@ main {
 .logo * {
     height: 46px;
     width: auto;
-}
-
-/* zwei Reihen */
-.row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    gap: 2rem;
-}
-
-.row * {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-}
-
-.beschreibung {
-    color: #ccc;
-    font-size: 1.1rem;
-
 }
 
 /* Abstand */
@@ -260,24 +244,5 @@ main {
 
     #nav-toggle:checked~.nav {
         display: flex
-    }
-
-    /* zwei Reihen */
-    .row {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .row img {
-        width: 100%;
-    }
-
-    /* zwei Reihen Reihenfolge */
-    #bild {
-        order: 1;
-    }
-
-    #text {
-        order: 2;
     }
 }

@@ -107,6 +107,10 @@ main {
     margin: 0;
 }
 
+a.active {
+        border: 2px solid var(--footer-background);
+    }
+
 /* Footer */
 .site-footer {
     background: var(--footer-background);
@@ -135,30 +139,78 @@ main {
     width: auto;
 }
 
-/* zwei Reihen */
-.row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    gap: 2rem;
-}
-
-.row * {
-    border-radius: 8px;
-    width: 100%;
-    height: auto;
-}
-
-.beschreibung {
-    color: #ccc;
-    font-size: 1.1rem;
-
-}
-
 /* Abstand */
 .abstand {
     margin-bottom: 20px;
 }
+
+/* Kontaktformular */
+form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    margin-bottom: 1.2rem;
+    border: 3px solid var(--footer-background);
+    border-radius: 6px;
+}
+
+input#maennlich, input#weiblich, input#divers, input#datenschutz {
+    width: 10px;
+    float: left;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 95%;
+    padding: 0.6rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #888;
+    outline: none;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background: #3c3c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #555;
+}
+
+.contact-info a {
+    color: var(--text-color);
+}
+
 /* Tablet style */
 @media screen and (max-width:1200px) {
 
@@ -261,23 +313,6 @@ main {
     #nav-toggle:checked~.nav {
         display: flex
     }
-
-    /* zwei Reihen */
-    .row {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .row img {
-        width: 100%;
-    }
-
-    /* zwei Reihen Reihenfolge */
-    #bild {
-        order: 1;
-    }
-
-    #text {
-        order: 2;
-    }
 }
+
+
