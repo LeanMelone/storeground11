@@ -18,6 +18,7 @@
 
 <body>
     <header class="site-header">
+        <img src="IMG/header.jpg" alt="Storeground Header" class="header-image">
         <div class="container">
             <a href="index.html">
                 <picture class="logo">
@@ -37,68 +38,32 @@
     </header>
 
     <main>
-        <h1>Contact</h1>
+        <h1>Kontakt</h1>
 
         <form action="https://api.web3forms.com/submit" method="post" class="contact-form" id="meinFormular">
             <input type="hidden" name="access_key" value="1edda660-a948-4657-b14c-86b412332858">
 
-            <fieldset>
-                <legend>Persönliche Daten</legend>
 
-                <div>
-                    <label for="name">Name:*</label><br>
-                    <input type="text" id="name" name="name" minlength="2" maxlength="20" required>
-                </div>
-                <div>
-                    <label for="email">E-Mail:*</label><br>
-                    <input type="email" id="email" name="email" required placeholder="email@email.ch">
-                </div>
-                <div>
-                    <label for="alter">Alter:*</label><br>
-                    <input type="number" id="alter" name="alter" min="0" max="140" required>
-                </div>
-                <div>
-                    <label>Geschlecht:</label><br>
-                    <input type="radio" id="maennlich" name="geschlecht" value="männlich">
-                    <label for="maennlich">Männlich</label>
-                    <input type="radio" id="weiblich" name="geschlecht" value="weiblich">
-                    <label for="weiblich">Weiblich</label>
-                    <input type="radio" id="divers" name="geschlecht" value="divers">
-                    <label for="divers">Divers</label>
-                </div>
-                <div>
-                    <label for="tel">Telefonnummer:</label><br>
-                    <input type="tel" id="tel" name="tel" pattern="[0-9]{3}[ ][0-9]{3}[ ][0-9]{2}[ ][0-9]{2}"
-                        placeholder="123 456 78 90">
-                </div>
-
-            </fieldset>
 
             <div>
-                <label for="ticket">Ticketkategorie:*</label><br>
-                <select id="ticket" name="ticket" required>
-                    <option value="">Bitte wählen</option>
-                    <option value="ticket">Ticket</option>
-                    <option value="vip">VIP-Ticket</option>
-                    <option value="backstage">Backstage-Pass</option>
-                </select>
+                <label for="firstname">Vorname:*</label>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="20" required
+                    pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
             </div>
             <div>
-                <label for="message">Nachricht:*</label><br>
-                <textarea id="message" name="message" required></textarea>
+                <label for="lastname">Nachname:</label>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="20"
+                    pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
             </div>
             <div>
-                <label for="date">Datum:*</label><br>
-                <input type="date" id="date" name="date" required>
+                <label for="email">E-Mail:*</label>
+                <input type="email" id="email" name="email" required placeholder="email@email.ch"
+                    pattern="^[\.\-\_]*[@]{1}[a-z]+[\.][a-z]+$">
             </div>
             <div>
-                <label for="time">Uhrzeit:*</label><br>
-                <input type="time" id="time" name="time" required>
-            </div>
-            <div>
-                <input type="checkbox" id="datenschutz" name="datenschutz" required>
-                <label for="datenschutz">Ich akzeptiere die Datenschutzerklärung.*</label>
-            </div>
+                <label for="message">Nachricht:*</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            </div><br>
 
             <button type="submit">Absenden</button>
         </form>
@@ -119,7 +84,11 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p class="brand">Storeground</p>
+            <br><br><br>
+            <picture class="logosmall">
+                <source srcset="IMG/Storeground_Logo.webp" type="image/webp">
+                <img src="IMG/Storeground_Logo.png" alt="Storeground Logo">
+            </picture><br>
             <a href="impressum.html" class="impressum">Impressum</a>
             <p>&copy; 2026 Storeground. Alle Rechte vorbehalten.</p>
         </div>
