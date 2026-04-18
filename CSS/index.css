@@ -27,9 +27,9 @@ body {
 }
 
 main {
-    max-width: 80%;
-    margin: 1.2rem auto;
-    padding: 0 1rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     grid-area: main;
 
 }
@@ -38,6 +38,26 @@ h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 4rem;
+    color: var(--text-color);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+h1#title {
+    margin-bottom: 4rem;
+    margin-top: 6rem;
 }
 
 /* Header */
@@ -54,7 +74,8 @@ h1 {
 }
 
 .container {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -172,6 +193,7 @@ header.site-header .header-image {
 /* Kontaktformular */
 form {
     max-width: 400px;
+    width: 80%;
     margin: 2rem auto;
     padding: 2rem;
     background: #222;
@@ -231,11 +253,21 @@ button:hover {
     color: var(--text-color);
 }
 
+/* Linie */
+.line {
+    height: 4px;
+    width: 70%;
+    background: var(--footer-text);
+    margin: 6rem auto;
+    border-radius: 2px;
+}
+
 /*about*/
 .about {
     color: var(--text-color);
     font-size: 1.5rem;
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     justify-items: center;
     text-align: center;
@@ -249,7 +281,6 @@ button:hover {
 .map {
     width: 100%;
     max-width: 600px;
-    
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -278,16 +309,22 @@ button:hover {
 .abstand {
     margin-bottom: 20px;
 }
+
+/* Instagram */
+.fa.fa-instagram {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
 /* Tablet style */
 @media screen and (max-width:1200px) {
 
     main {
-        max-width: 90%;
+        width: 90%;
     }
 
     /* Header */
     .container {
-        max-width: 90%;
+        width: 90%;
         flex-direction: row;
         gap: 0.6rem;
         padding: 0 1rem
@@ -334,12 +371,20 @@ button:hover {
 @media screen and (max-width:700px) {
 
     main {
-        max-width: 90%;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
     }
 
     /* Header */
     .container {
-        max-width: 90%;
+        width: 90%;
         flex-direction: row;
         gap: 0.6rem;
         padding: 0 1rem
@@ -398,5 +443,10 @@ button:hover {
 
     #text {
         order: 2;
+    }
+
+    /* About */
+    .about {
+        font-size: 1.2rem;
     }
 }

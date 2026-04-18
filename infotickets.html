@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info & Tickets</title>
-    <meta name="description" content="Wichtige Informationen und Ticketpreise für das Storeground Festival.">
+    <meta name="description" content="Wichtige Informationen und Tickets für das Storeground Festival.">
     <meta name="author" content="Lean Melone">
     <link rel="stylesheet" href="CSS/infotickets.css">
     <link rel="icon" href="IMG/tabbild.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,19 +25,80 @@
                     <img src="IMG/Storeground_Logo.png" alt="Storeground Logo">
                 </picture>
             </a>
+            <label for="nav-toggle" class="nav-toggle">☰</label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
             <nav class="nav">
                 <ul>
                     <li><a href="infotickets.html" class="active">Info & Tickets</a></li>
                     <li><a href="index.html#about">Über das Festival</a></li>
                     <!-- <li><a href="gallery.html">Galerie</a></li> -->
                     <li><a href="index.html#contact">Kontakt</a></li>
+                    <li><a href="https://www.instagram.com/storeground_bandfestival/" target="_blank" id="insta-button"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <a href="https://eventfrog.ch/de/p/konzerte/pop-rock/storeground-bandfestival-2026-7421952080980516081.html" target="_blank" rel="noopener noreferrer" class="tickets">Tickets kaufen</a>
+        <section class="intro">
+            <h1>Storeground Festival</h1>
+            <p>09. Mai 2026 • Möhlin</p>
+            <a href="https://eventfrog.ch/de/p/konzerte/pop-rock/storeground-bandfestival-2026-7421952080980516081.html"
+                target="_blank" rel="noopener noreferrer" class="tickets"><strong>Tickets kaufen</strong></a>
+        </section>
+
+        <section>
+            <h2>Line-Up</h2>
+            <div class="bands">
+
+                <div class="band">
+                    <a href="https://www.instagram.com/nocapsmusic/"><img src="IMG/nocaps.png" alt="NoCaps"></a>
+                </div>
+
+                <div class="band">
+                    <a href="https://www.instagram.com/the_returners_5/"><img src="IMG/thereturners.png" alt="The Returners"></a>
+                </div>
+
+                <div class="band">
+                    <a href="https://www.instagram.com/mock_out.music/"><img src="IMG/mockout.png" alt="Mock Out"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="infos">
+            <div class="info">
+                <h2>Infos</h2>
+                <p><strong>Ort:</strong> Aula Storebode Möhlin</p>
+                <p><strong>Einlass:</strong> 18:00 Uhr</p>
+                <p><strong>Beginn:</strong> 18:30 Uhr</p>
+                <p><strong>Datum:</strong> 09. Mai 2026</p>
+            </div>
+            <br>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d672.9826265177741!2d7.8431065723703615!3d47.56914052563684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47904bb4b143056b%3A0x9fb4f274fca7cf1d!2sSchulhaus%20Storebode!5e0!3m2!1sde!2sch!4v1773585483628!5m2!1sde!2sch"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </section>
+
+        <div class="line"></div>
+
+        <section class="verpflegung">
+            <h2>Verpflegung</h2>
+            <p>Auf dem Festival ist für abwechslungsreiche Verpflegung gesorgt. Neben klassischen Snacks wie Pommes und Bratwurst gibt es auch salzige und süsse Crêpes sowie verschiedene Desserts. Auch vegetarische und vegane Speisen stehen zur Auswahl. Dazu werden erfrischende Softgetränke und alkoholische Getränke angeboten – perfekt für eine kleine Pause zwischendurch.</p>
+            
+        </section>
+
+        <section class="ticket">
+            <h2>Tickets</h2>
+            <p>Preis: 8 CHF inkl. Softgetränk</p><br>
+            <a href="https://eventfrog.ch/de/p/konzerte/pop-rock/storeground-bandfestival-2026-7421952080980516081.html"
+                target="_blank" rel="noopener noreferrer" class="tickets"><strong>Tickets kaufen</strong></a>
+        </section>
     </main>
 
 

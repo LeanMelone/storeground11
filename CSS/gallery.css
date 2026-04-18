@@ -27,9 +27,9 @@ body {
 }
 
 main {
-    max-width: 80%;
-    margin: 1.2rem auto;
-    padding: 0 1rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     grid-area: main;
 
 }
@@ -54,7 +54,8 @@ h1 {
 }
 
 .container {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -169,16 +170,23 @@ header.site-header .header-image {
 .abstand {
     margin-bottom: 20px;
 }
+
+/* Instagram */
+.fa.fa-instagram {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
 /* Tablet style */
 @media screen and (max-width:1200px) {
 
     main {
-        max-width: 90%;
+        width: 90%;
     }
 
     /* Header */
     .container {
-        max-width: 90%;
+        width: 90%;
         flex-direction: row;
         gap: 0.6rem;
         padding: 0 1rem
@@ -225,12 +233,16 @@ header.site-header .header-image {
 @media screen and (max-width:700px) {
 
     main {
-        max-width: 90%;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
 
     /* Header */
     .container {
-        max-width: 90%;
+        width: 90%;
         flex-direction: row;
         gap: 0.6rem;
         padding: 0 1rem

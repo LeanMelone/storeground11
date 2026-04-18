@@ -27,9 +27,9 @@ body {
 }
 
 main {
-    max-width: 80%;
-    margin: 1.2rem auto;
-    padding: 0 1rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     grid-area: main;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,8 @@ div.Nachricht p {
 }
 
 .container {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -172,23 +173,31 @@ header.site-header .header-image {
 
 .Nachricht {
     text-align: center;
+    align-self: center;
     background: var(--header-background);
     padding: 2rem;
     border-radius: 20px;
     max-width: 500px;
+    width: 80%;
     margin: 100px auto;
+}
+
+/* Instagram */
+.fa.fa-instagram {
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 /* Tablet style */
 @media screen and (max-width:1200px) {
 
     main {
-        max-width: 90%;
+        width: 90%;
     }
 
     /* Header */
     .container {
-        max-width: 90%;
+        width: 90%;
         flex-direction: row;
         gap: 0.6rem;
         padding: 0 1rem
@@ -229,18 +238,22 @@ header.site-header .header-image {
     #nav-toggle:checked~.nav {
         display: flex
     }
+
+    .Nachricht {
+        width: 90%;
+    }
 }
 
 /* Mobile style */
 @media screen and (max-width:700px) {
 
     main {
-        max-width: 90%;
+        width: 90%;
     }
 
     /* Header */
     .container {
-        max-width: 90%;
+        width: 90%;
         flex-direction: row;
         gap: 0.6rem;
         padding: 0 1rem
@@ -285,7 +298,7 @@ header.site-header .header-image {
     .Nachricht {
         padding: 1rem;
         margin: 0;
-        max-width: 100%;
+        width: 90%;
     }
 
     h1 {
