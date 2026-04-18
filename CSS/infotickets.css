@@ -277,6 +277,10 @@ section.verpflegung {
     text-align: center;
 }
 
+.tickets {
+    color: var(--text-color);
+}
+
 /* Tablet style */
 @media screen and (max-width:1200px) {
 
@@ -399,6 +403,3 @@ section.verpflegung {
 }
 
 
-.tickets {
-    color: var(--text-color);
-}
