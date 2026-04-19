@@ -400,6 +400,15 @@ section.verpflegung {
     .infos {
         flex-direction: column;
     }
+
+    .line  {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
 }
 
 
