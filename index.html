@@ -12,13 +12,14 @@
     <link rel="icon" href="IMG/tabbild.png" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="site-header">
-        <img src="IMG/header.jpg" alt="Storeground Header" class="header-image">
         <div class="container">
             <a href="index.html">
                 <picture class="logo">
@@ -34,7 +35,8 @@
                     <li><a href="#about">Über das Festival</a></li>
                     <!-- <li><a href="gallery.html">Galerie</a></li> -->
                     <li><a href="#contact">Kontakt</a></li>
-                    <li><a href="https://www.instagram.com/storeground_bandfestival/" target="_blank" id="insta-button"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/storeground_bandfestival/" target="_blank"
+                            id="insta-button"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -47,17 +49,21 @@
         <div class="line" id="about"></div>
 
         <article class="about">
-            <h2>Über Storeground</h2>
+            <section>
+                <h2>Über Storeground</h2>
 
-            <p>
-                Storeground ist ein Bandfestival, welches vom Verein Freunde der rockenden Nutztiere am 09. Mai 2026 in Möhlin zum ersten Mal durchgeführt wird.
-                Ziel des Vereins ist es, jungen Bands eine coole Auftrittsmöglichkeit und der Bevölkerung ein tolles Event zu bieten. <br><br>
-                Der Festivalname "Storeground" ist eine Anspielung auf den Veranstaltungsort, den Storebode.
-            </p>
-            <section class ="location">
+                <p>
+                    Storeground ist ein Bandfestival, welches vom Verein Freunde der rockenden Nutztiere am 09. Mai 2026
+                    in Möhlin zum ersten Mal durchgeführt wird.
+                    Ziel des Vereins ist es, jungen Bands eine coole Auftrittsmöglichkeit und der Bevölkerung ein tolles
+                    Event zu bieten. <br><br>
+                    Der Festivalname "Storeground" ist eine Anspielung auf den Veranstaltungsort, den Storebode.
+                </p>
+            </section>
+            <section>
                 <h3>Standort</h3>
                 <p>
-                    Das Storeground Festival findet in Möhlin statt, in der Aula des Storebode Schulhauses.
+                    ㅤDas Storeground Festival findet in Möhlin statt, in der Aula des Storebode Schulhauses.ㅤ
                 </p>
                 <iframe class="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d672.9826265177741!2d7.8431065723703615!3d47.56914052563684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47904bb4b143056b%3A0x9fb4f274fca7cf1d!2sSchulhaus%20Storebode!5e0!3m2!1sde!2sch!4v1773585483628!5m2!1sde!2sch"
@@ -69,35 +75,38 @@
 
         <div class="line" id="contact"></div>
 
-        <h2>Kontakt</h2>
+        <section>
+            <h2>Kontakt</h2>
 
-        <form action="https://api.web3forms.com/submit" method="post" class="contact-form" id="meinFormular">
-            <input type="hidden" name="access_key" value="4bce4618-a7ac-49d0-8cbb-c47f5301f249">
+            <form action="https://api.web3forms.com/submit" method="post" class="contact-form" id="meinFormular">
+                <input type="hidden" name="access_key" value="4bce4618-a7ac-49d0-8cbb-c47f5301f249">
 
 
 
-            <div>
-                <label for="firstname">Vorname:*</label>
-                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="20" required placeholder="Max"
-                    pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
-            </div>
-            <div>
-                <label for="lastname">Nachname:</label>
-                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="20" placeholder="Mustermann"
-                    pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
-            </div>
-            <div>
-                <label for="email">E-Mail:*</label>
-                <input type="email" id="email" name="email" required placeholder="email@email.ch"
-                    pattern="^[\.\-\_]*[@]{1}[a-z]+[\.][a-z]+$">
-            </div>
-            <div>
-                <label for="message">Nachricht:*</label>
-                <textarea id="message" name="message" rows="4" cols="50" required placeholder="Hey, darf meine Band auf dem Festival auftreten?"></textarea>
-            </div><br>
+                <div>
+                    <label for="firstname">Vorname:*</label>
+                    <input type="text" id="firstname" name="firstname" minlength="2" maxlength="20" required
+                        placeholder="Max" pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
+                </div>
+                <div>
+                    <label for="lastname">Nachname:</label>
+                    <input type="text" id="lastname" name="lastname" minlength="2" maxlength="20"
+                        placeholder="Mustermann" pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
+                </div>
+                <div>
+                    <label for="email">E-Mail:*</label>
+                    <input type="email" id="email" name="email" required placeholder="email@email.ch"
+                        pattern="^[\.\-\_]*[@]{1}[a-z]+[\.][a-z]+$">
+                </div>
+                <div>
+                    <label for="message">Nachricht:*</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required
+                        placeholder="Hey, darf meine Band auf dem Festival auftreten?"></textarea>
+                </div><br>
 
-            <button type="submit">Absenden</button>
-        </form>
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
 
         <script>
             const formular = document.getElementById("meinFormular");
