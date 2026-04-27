@@ -17,14 +17,13 @@ body {
     margin: 0;
     background: var(--background-color);
     color: var(--text-color);
-    min-height: 100vh;
+    min-height: 115vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "header"
         "main"
         "footer";
-    min-height: 100vh;
     background-image: url("../IMG/header.jpg");
     background-size: cover;
     background-position: center;
