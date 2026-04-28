@@ -17,7 +17,7 @@ body {
     margin: 0;
     background: var(--background-color);
     color: var(--text-color);
-    min-height: 115dvh;
+    min-height: 100dvh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
